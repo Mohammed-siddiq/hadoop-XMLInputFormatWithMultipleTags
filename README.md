@@ -136,7 +136,7 @@ Consider the following XML
 </catalog>
 ```
 
-If you want to grab all the those entities within `<book></book>`, `<article></article>`,`<paper></paper>` use this [XMLInputFormatWithMultipleTags](XMLInputFormatWithMultipleTags) as :
+If you want to grab all the those entities within `<book></book>`, `<article></article>`,`<paper></paper>` use this [XMLInputFormatWithMultipleTags]() as :
 
 ```java
 Configuration conf = new Configuration();
