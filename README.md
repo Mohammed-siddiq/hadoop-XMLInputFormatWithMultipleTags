@@ -1,5 +1,5 @@
 # Description
--
+
 [XMLInputFormat](https://github.com/apache/mahout/blob/ad84344e4055b1e6adff5779339a33fa29e1265d/examples/src/main/java/org/apache/mahout/classifier/bayes/XmlInputFormat.java) is an implementation that reads records which are delimited by a specific begin/end tag. This is useful when providing logical file splits to the mapper based on a single start and end tag.
 
 Consider the following XML
