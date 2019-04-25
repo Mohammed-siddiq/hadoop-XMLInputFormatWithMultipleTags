@@ -136,7 +136,7 @@ Consider the following XML
 </catalog>
 ```
 
-If you want to grab all the those entities within `<book></book>`, `<article></article>`,`<paper></paper>` use this [XMLInputFormatWithMultipleTags]() as :
+If you want to grab all the those entities within `<book></book>`, `<article></article>`,`<paper></paper>` use this [XMLInputFormatWithMultipleTags](https://github.com/Mohammed-siddiq/hadoop-XMLInputFormatWithMultipleTags/blob/master/XmlInputFormatWithMultipleTags.java) as :
 
 ```java
 Configuration conf = new Configuration();
