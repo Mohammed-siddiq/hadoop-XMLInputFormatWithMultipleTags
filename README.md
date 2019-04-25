@@ -1,6 +1,6 @@
 # Description
 
-[XMLInputFormat](https://github.com/apache/mahout/blob/ad84344e4055b1e6adff5779339a33fa29e1265d/examples/src/main/java/org/apache/mahout/classifier/bayes/XmlInputFormat.java) is an implementation that reads records which are delimited by a specific begin/end tag. This is useful when providing logical file splits to the mapper based on a single start and end tag.
+[XMLInputFormat](https://github.com/apache/mahout/blob/ad84344e4055b1e6adff5779339a33fa29e1265d/examples/src/main/java/org/apache/mahout/classifier/bayes/XmlInputFormat.java) is an implementation that reads records which are delimited by a specific begin/end tag. This is useful when providing logical file splits to the mapper based on a single start and end tag irrespective of the physical splits of the file.
 
 Consider the following XML
 
@@ -38,7 +38,7 @@ Consider the following XML
 </catalog>
 ```
 
-Set the `start_tag` as `<book>` and `end_tag` as `</book>` for the XMLInputFormat like this :
+Setting the `start_tag` as `<book>` and `end_tag` as `</book>` for the XMLInputFormat :
 
 ```java
 Configuration conf = new Configuration();
@@ -54,7 +54,7 @@ job.setInputFormatClass(XmlInputFormat.class);
 ```
 
 
-This will ensure that every mapper gets one logical entity irrespective of the physical split of the file on HDFS. *[Of course the XML file on HDFS must be well-formd]*
+This will ensure that every mapper gets one logical entity irrespective of the physical split of the file on HDFS. *[Of course the XML file on HDFS must be well-formed]*
 
 
 However this is not useful when you would like to extract records based on multiple start and end tags.
